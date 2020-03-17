@@ -1,0 +1,4 @@
+﻿[*.cs]
+
+# RS1008: Avoid storing per-compilation data into the fields of a diagnostic analyzer.
+dotnet_diagnostic.RS1008.severity = error

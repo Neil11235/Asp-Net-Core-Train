@@ -40,3 +40,5 @@ E:\Code\Asp-Net-Core-Train\Heavy.Web\obj\Debug\netcoreapp2.2\Heavy.Web.dll
 E:\Code\Asp-Net-Core-Train\Heavy.Web\obj\Debug\netcoreapp2.2\Heavy.Web.pdb
 E:\Code\Asp-Net-Core-Train\Heavy.Web\obj\Debug\netcoreapp2.2\Heavy.Web.genruntimeconfig.cache
 E:\Code\Asp-Net-Core-Train\Heavy.Web\obj\Debug\netcoreapp2.2\Heavy.Web.csproj.CopyComplete
+E:\Code\Asp-Net-Core-Train\Heavy.Web\obj\Debug\netcoreapp2.2\Razor\Views\User\AddUser.cshtml.g.cs
+E:\Code\Asp-Net-Core-Train\Heavy.Web\obj\Debug\netcoreapp2.2\Razor\Views\User\Index.cshtml.g.cs
