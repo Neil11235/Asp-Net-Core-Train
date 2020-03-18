@@ -42,3 +42,8 @@ E:\Code\Asp-Net-Core-Train\Heavy.Web\obj\Debug\netcoreapp2.2\Heavy.Web.genruntim
 E:\Code\Asp-Net-Core-Train\Heavy.Web\obj\Debug\netcoreapp2.2\Heavy.Web.csproj.CopyComplete
 E:\Code\Asp-Net-Core-Train\Heavy.Web\obj\Debug\netcoreapp2.2\Razor\Views\User\AddUser.cshtml.g.cs
 E:\Code\Asp-Net-Core-Train\Heavy.Web\obj\Debug\netcoreapp2.2\Razor\Views\User\Index.cshtml.g.cs
+E:\Code\Asp-Net-Core-Train\Heavy.Web\obj\Debug\netcoreapp2.2\Razor\Views\Role\AddRole.cshtml.g.cs
+E:\Code\Asp-Net-Core-Train\Heavy.Web\obj\Debug\netcoreapp2.2\Razor\Views\Role\AddUserToRole.cshtml.g.cs
+E:\Code\Asp-Net-Core-Train\Heavy.Web\obj\Debug\netcoreapp2.2\Razor\Views\Role\DeleteUserFromRole.cshtml.g.cs
+E:\Code\Asp-Net-Core-Train\Heavy.Web\obj\Debug\netcoreapp2.2\Razor\Views\Role\EditRole.cshtml.g.cs
+E:\Code\Asp-Net-Core-Train\Heavy.Web\obj\Debug\netcoreapp2.2\Razor\Views\Role\Index.cshtml.g.cs

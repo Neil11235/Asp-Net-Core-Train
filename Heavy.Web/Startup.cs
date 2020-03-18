@@ -9,6 +9,9 @@ using Heavy.Web.Data;
 using Heavy.Web.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Mvc.ApplicationParts;
+using Microsoft.AspNetCore.Internal;
+using Microsoft.AspNetCore.Routing.Matching;
 
 namespace Heavy.Web
 {
@@ -32,18 +35,19 @@ namespace Heavy.Web
 
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDefaultIdentity<IdentityUser>(options =>
-            {
-                //设置密码不要特殊字符
-                options.Password.RequireNonAlphanumeric = false;
-                options.Password.RequireLowercase = false;
-                options.Password.RequireUppercase = false;
-                //设置密码长度为4个字符
-                options.Password.RequiredLength = 4;
+            services.AddIdentity<IdentityUser, IdentityRole>(options =>
+             {
+                 //设置密码不要特殊字符
+                 options.Password.RequireNonAlphanumeric = false;
+                 options.Password.RequireLowercase = false;
+                 options.Password.RequireUppercase = false;
+                 //设置密码长度为4个字符
+                 options.Password.RequiredLength = 4;
 
-            })
+             })
             .AddDefaultUI(UIFramework.Bootstrap4)
-            .AddEntityFrameworkStores<ApplicationDbContext>();
+            .AddEntityFrameworkStores<ApplicationDbContext>()
+            .AddDefaultTokenProviders();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
@@ -74,7 +78,7 @@ namespace Heavy.Web
             app.UseCookiePolicy();
 
             app.UseAuthentication();
-
+            
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
